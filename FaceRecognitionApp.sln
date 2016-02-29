@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceRecognitionApp", "FaceRecognitionApp\FaceRecognitionApp.csproj", "{32826B28-74DE-4232-B03D-846926642621}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityframeworkTry", "..\EntityframeworkTry\EntityframeworkTry\EntityframeworkTry.csproj", "{E6BEB6FE-17E4-4A8C-95D3-1101D3570788}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32826B28-74DE-4232-B03D-846926642621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32826B28-74DE-4232-B03D-846926642621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32826B28-74DE-4232-B03D-846926642621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32826B28-74DE-4232-B03D-846926642621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6BEB6FE-17E4-4A8C-95D3-1101D3570788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6BEB6FE-17E4-4A8C-95D3-1101D3570788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6BEB6FE-17E4-4A8C-95D3-1101D3570788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6BEB6FE-17E4-4A8C-95D3-1101D3570788}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

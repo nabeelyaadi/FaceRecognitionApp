@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AttendanceDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="AttendanceDBModelStoreContainer">
+    <EntitySet Name="tbl_Users" EntityType="AttendanceDBModel.Store.tbl_Users" store:Type="Tables" store:Schema="dbo" store:Name="tbl_Users">
+      <DefiningQuery>SELECT 
+      [tbl_Users].[id] AS [id], 
+      [tbl_Users].[Enrollment_ID] AS [Enrollment_ID], 
+      [tbl_Users].[User_Name] AS [User_Name], 
+      [tbl_Users].[Password] AS [Password], 
+      [tbl_Users].[Privilege] AS [Privilege], 
+      [tbl_Users].[Enabled] AS [Enabled]
+      FROM [dbo].[tbl_Users] AS [tbl_Users]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'AttendanceDB.dbo.tbl_Users' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="tbl_Users">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Enrollment_ID" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="Enrollment_ID" Type="int" Nullable="false" />
+    <Property Name="User_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="Privilege" Type="varchar" MaxLength="50" />
+    <Property Name="Enabled" Type="varchar" MaxLength="50" />
+  </EntityType>
+</Schema>

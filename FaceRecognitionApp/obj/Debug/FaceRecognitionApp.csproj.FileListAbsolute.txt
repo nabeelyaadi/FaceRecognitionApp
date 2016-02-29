@@ -1,0 +1,13 @@
+C:\Users\M.Nabeel\Documents\Visual Studio 2012\Projects\FaceRecognitionApp\FaceRecognitionApp\bin\Debug\FaceRecognitionApp.exe.config
+C:\Users\M.Nabeel\Documents\Visual Studio 2012\Projects\FaceRecognitionApp\FaceRecognitionApp\obj\Debug\FaceRecognitionApp.csprojResolveAssemblyReference.cache
+C:\Users\M.Nabeel\Documents\Visual Studio 2012\Projects\FaceRecognitionApp\FaceRecognitionApp\obj\Debug\Interop.zkemkeeper.dll
+C:\Users\M.Nabeel\Documents\Visual Studio 2012\Projects\FaceRecognitionApp\FaceRecognitionApp\obj\Debug\FaceRecognitionApp.csproj.ResolveComReference.cache
+C:\Users\M.Nabeel\Documents\Visual Studio 2012\Projects\FaceRecognitionApp\FaceRecognitionApp\obj\Debug\FaceRecognitionApp.Properties.Resources.resources
+C:\Users\M.Nabeel\Documents\Visual Studio 2012\Projects\FaceRecognitionApp\FaceRecognitionApp\obj\Debug\FaceRecognitionApp.csproj.GenerateResource.Cache
+C:\Users\M.Nabeel\Documents\Visual Studio 2012\Projects\FaceRecognitionApp\FaceRecognitionApp\bin\Debug\FaceRecognitionApp.exe
+C:\Users\M.Nabeel\Documents\Visual Studio 2012\Projects\FaceRecognitionApp\FaceRecognitionApp\bin\Debug\FaceRecognitionApp.pdb
+C:\Users\M.Nabeel\Documents\Visual Studio 2012\Projects\FaceRecognitionApp\FaceRecognitionApp\obj\Debug\FaceRecognitionApp.exe
+C:\Users\M.Nabeel\Documents\Visual Studio 2012\Projects\FaceRecognitionApp\FaceRecognitionApp\obj\Debug\FaceRecognitionApp.pdb
+C:\Users\M.Nabeel\Documents\Visual Studio 2012\Projects\FaceRecognitionApp\FaceRecognitionApp\obj\Debug\FaceRecognitionApp.NasfiaAttendanceApp.resources
+C:\Users\M.Nabeel\Documents\Visual Studio 2012\Projects\FaceRecognitionApp\FaceRecognitionApp\bin\Debug\EntityFramework.dll
+C:\Users\M.Nabeel\Documents\Visual Studio 2012\Projects\FaceRecognitionApp\FaceRecognitionApp\bin\Debug\EntityFramework.xml

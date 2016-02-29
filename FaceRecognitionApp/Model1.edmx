@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AttendanceDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="AttendanceDBModelStoreContainer">
+          <EntitySet Name="tbl_Users" EntityType="AttendanceDBModel.Store.tbl_Users" store:Type="Tables" store:Schema="dbo" store:Name="tbl_Users">
+            <DefiningQuery>SELECT 
+      [tbl_Users].[id] AS [id], 
+      [tbl_Users].[Enrollment_ID] AS [Enrollment_ID], 
+      [tbl_Users].[User_Name] AS [User_Name], 
+      [tbl_Users].[Password] AS [Password], 
+      [tbl_Users].[Privilege] AS [Privilege], 
+      [tbl_Users].[Enabled] AS [Enabled]
+      FROM [dbo].[tbl_Users] AS [tbl_Users]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'AttendanceDB.dbo.tbl_Users' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="tbl_Users">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="Enrollment_ID" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="Enrollment_ID" Type="int" Nullable="false" />
+          <Property Name="User_Name" Type="varchar" MaxLength="50" />
+          <Property Name="Password" Type="varchar" MaxLength="50" />
+          <Property Name="Privilege" Type="varchar" MaxLength="50" />
+          <Property Name="Enabled" Type="varchar" MaxLength="50" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AttendanceDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="AttendanceDBEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_Users" EntityType="AttendanceDBModel.tbl_Users" />
+        </EntityContainer>
+        <EntityType Name="tbl_Users">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="Enrollment_ID" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="Enrollment_ID" Type="Int32" Nullable="false" />
+          <Property Name="User_Name" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Password" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Privilege" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Enabled" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AttendanceDBModelStoreContainer" CdmEntityContainer="AttendanceDBEntities">
+          <EntitySetMapping Name="tbl_Users">
+            <EntityTypeMapping TypeName="AttendanceDBModel.tbl_Users">
+              <MappingFragment StoreEntitySet="tbl_Users">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="Enrollment_ID" ColumnName="Enrollment_ID" />
+                <ScalarProperty Name="User_Name" ColumnName="User_Name" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Privilege" ColumnName="Privilege" />
+                <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
